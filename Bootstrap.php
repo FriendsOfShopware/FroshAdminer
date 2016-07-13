@@ -13,7 +13,7 @@ class Shopware_Plugins_Backend_AdminerForShopware_Bootstrap extends Shopware_Com
     public function getInfo()
     {
         return array(
-            'version' => '1.0.0',
+            'version' => '1.1.0',
             'autor' => 'Shyim',
             'label' => $this->getLabel(),
             'support' => 'https://github.com/Shyim/whoops-for-shopware',
