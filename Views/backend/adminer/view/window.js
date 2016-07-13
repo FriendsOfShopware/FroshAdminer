@@ -11,9 +11,11 @@ Ext.define('Shopware.apps.Adminer.view.Window', {
     initComponent: function() {
         var me = this;
 
+        var token = (typeof csrfToken == 'undefined') ? '' : csrfToken;
+
         me.items = [{
             xtype: 'container',
-            html: '<iframe id="test" src="{url action=form}"></iframe>',
+            html: '<iframe id="test" src="{url action=form}?__csrf_token=' + token + '"></iframe>',
             listeners: {
                 'afterrender': function () {
                     this.getEl().dom.children[0].onload = function () {
