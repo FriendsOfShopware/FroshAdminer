@@ -1,0 +1,18 @@
+language: php
+
+php:
+- 7.0
+
+sudo: false
+
+script:
+- "./build.sh"
+
+deploy:
+  provider: releases
+  api_key:
+    secure: U2OcY4bAhmo+eoRJ6UJE2uRkPyx+FVpnqCYO9JvJKrNiEgrxttQLyUszz/wVjJ9or4doUyWQ2B2qsmzZHJZDT8nxG9MIbEy/F4ppJdOE0+pbRj3YXDlJp/BsrctyIq8mDMD93h43fBnl06Wyyx4AQDmrvZr0u+kqviVEh7nRgVar0UiUc7pWNCxUAebIvDE9mbBdktdHnfjCQ7Wq0Y/N1CMLeBw9W8LZiurnk5e629WWJcVkfiVaEQGCCxLVBcjpyjXJXUnoewcMPzLvEBK0HdCyWcy8cPiDKvQz/ll5Aut5x8GZlkLc2PoPOJNtgC93CavZq1N0wvlVr4a1qCw8utshrjD6m9d04jVFjfgtpkJrloMTPOxrOR0VbPf8PvzhRQUYHHSpB4wmZEBR0otnNRhxj+eUD46+NLQpSutIoQ78gKHeuT6GdS2REh6PZ/JphMubmTAb502ONfCOtiC6GOz2smAoeN5c9/eCJag9yYdtU/2OqJ3a6dJM/isua5G7Edq/KBy4pXXk8+9jK21kQ6VjAENHn5D1Yh6edf0EDWIdZRcdppyk3OyGqoLhqCF7yoRpz36cBpqTBk5XLmNwgfsaPvaGTLhBhwbCx7S0dIzVkYSMABK2ftQi+2p1nRPe71dIe46/w0etvdFXwjXiuCYE+DPoIN2NE9mjnp+6PzY=
+  file: AdminerForShopware-*.zip
+  file_glob: true
+  on:
+    tags: true
