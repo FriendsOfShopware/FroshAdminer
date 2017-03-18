@@ -499,7 +499,7 @@ js_escape('You are offline.'),'\';
 <div id="content">
 ';if($Ha!==null){$A=substr(preg_replace('~\b(username|db|ns)=[^&]*&~','',ME),0,-1);echo'<p id="breadcrumb"><a href="'.h($A?$A:".").'">'.$Fb[DRIVER].'</a> &raquo; ';$A=substr(preg_replace('~\b(db|ns)=[^&]*&~','',ME),0,-1);$O=(SERVER!=""?h(SERVER):'Server');if($Ha===false)echo"$O\n";else{echo"<a href='".($A?h($A):".")."' accesskey='1' title='Alt+Shift+1'>$O</a> &raquo; ";if($_GET["ns"]!=""||(DB!=""&&is_array($Ha)))echo'<a href="'.h($A."&db=".urlencode(DB).(support("scheme")?"&ns=":"")).'">'.h(DB).'</a> &raquo; ';if(is_array($Ha)){if($_GET["ns"]!="")echo'<a href="'.h(substr(ME,0,-1)).'">'.h($_GET["ns"]).'</a> &raquo; ';foreach($Ha
 as$z=>$X){$yb=(is_array($X)?$X[1]:h($X));if($yb!="")echo"<a href='".h(ME."$z=").urlencode(is_array($X)?$X[0]:$X)."'>$yb</a> &raquo; ";}}echo"$kg\n";}}echo"<h2>$mg</h2>\n","<div id='ajaxstatus' class='jsonly hidden'></div>\n";restart_session();page_messages($k);$h=&get_session("dbs");if(DB!=""&&$h&&!in_array(DB,$h,true))$h=null;stop_session();define("PAGE_HEADER",1);}function
-page_headers(){global$b;header("Content-Type: text/html; charset=utf-8");header("Cache-Control: no-cache");if($b->headers()){header("X-Frame-Options: deny");header("X-XSS-Protection: 0");}}function
+page_headers(){global$b;header("Content-Type: text/html; charset=utf-8");header("Cache-Control: no-cache");if($b->headers()){header("X-XSS-Protection: 0");}}function
 page_messages($k){$Hg=preg_replace('~^[^?]*~','',$_SERVER["REQUEST_URI"]);$Ed=$_SESSION["messages"][$Hg];if($Ed){echo"<div class='message'>".implode("</div>\n<div class='message'>",$Ed)."</div>\n";unset($_SESSION["messages"][$Hg]);}if($k)echo"<div class='error'>$k</div>\n";}function
 page_footer($Gd=""){global$b,$T;echo'</div>
 
