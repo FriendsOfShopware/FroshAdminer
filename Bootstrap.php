@@ -31,6 +31,11 @@ class Shopware_Plugins_Backend_AdminerForShopware_Bootstrap extends Shopware_Com
         return true;
     }
 
+    public function update($version)
+    {
+        return true;
+    }
+
     private function addMenuItem()
     {
         $settingsItem = $this->Menu()->findOneBy(['label' => 'Einstellungen']);
