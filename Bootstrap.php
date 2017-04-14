@@ -10,7 +10,7 @@ class Shopware_Plugins_Backend_AdminerForShopware_Bootstrap extends Shopware_Com
     public function getInfo()
     {
         return array(
-            'version' => '1.2.0',
+            'version' => '1.2.1',
             'autor' => 'Shyim',
             'label' => $this->getLabel(),
             'support' => 'https://github.com/shyim/adminer-for-shopware',
