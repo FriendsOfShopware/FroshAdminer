@@ -1,6 +1,6 @@
 {
   "name": "shyim/adminer-for-shopware",
-  "type": "shopware-backend-plugin",
+  "type": "shopware-plugin",
   "keywords": ["adminer", "shopware"],
   "description": "Adminer for Shopware",
   "license": "MIT",
