@@ -12,6 +12,8 @@ Ext.define('Shopware.apps.Adminer', {
     ],
 
     launch: function() {
-        return Ext.create('Shopware.apps.Adminer.view.Window');
+        return Ext.create('Shopware.apps.Adminer.view.Window', {
+            action: this.action
+        });
     }
 });

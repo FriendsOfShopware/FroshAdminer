@@ -15,7 +15,7 @@ Ext.define('Shopware.apps.Adminer.view.Window', {
 
         me.items = [{
             xtype: 'container',
-            html: '<iframe id="test" src="{url action=form}?__csrf_token=' + token + '"></iframe>',
+            html: '<iframe id="test" src="{url action=form}?adminerAction=' + me.action +'&__csrf_token=' + token + '"></iframe>',
             listeners: {
                 'afterrender': function () {
                     this.getEl().dom.children[0].onload = function () {
@@ -25,5 +25,7 @@ Ext.define('Shopware.apps.Adminer.view.Window', {
             }
         }];
         me.callParent(arguments);
+
+        me.setTitle('Adminer (' + (me.action === 'index' ? 'MySQL' : 'ElasticSearch') + ')');
     }
 });

@@ -4,10 +4,19 @@
     <entries>
         <entry>
             <name>AdminerMySQL</name>
-            <label lang="en">Adminer</label>
-            <label lang="de">Adminer</label>
+            <label lang="en">Adminer (MySQL)</label>
+            <label lang="de">Adminer (MySQL)</label>
             <controller>Adminer</controller>
             <action>index</action>
+            <class>sprite-gear</class>
+            <parent identifiedBy="controller">ConfigurationMenu</parent>
+        </entry>
+        <entry>
+            <name>AdminerElastic</name>
+            <label lang="en">Adminer (ElasticSearch)</label>
+            <label lang="de">Adminer (ElasticSearch)</label>
+            <controller>Adminer</controller>
+            <action>elasticSearch</action>
             <class>sprite-gear</class>
             <parent identifiedBy="controller">ConfigurationMenu</parent>
         </entry>

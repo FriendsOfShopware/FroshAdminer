@@ -2,13 +2,18 @@
 
 manage the database in backend
 
-![Adminer in Shopware](http://i.imgur.com/eWSl5K3.png)
+## MySQL
+![Adminer in Shopware](https://ipfs.io/ipfs/QmdUVhnuzidwqQgyAi7bd4hJAM26GEw7afR7Abx2ep1Kj9)
+
+
+## ElasticSearch
+![Adminer in Shopware](https://ipfs.io/ipfs/QmUpjMBEHM7To2h9WUtE2dFHMDxNA778VS3FM2pEtYWGJ4)
 
 # Installation
 
 ## Zip Installation package for the Shopware Plugin Manager
 
-* Download the [latest plugin version](https://github.com/shyim/adminer-for-shopware/releases/latest/) (e.g. `AdminerForShopware-1.1.1.zip`)
+* Download the [latest plugin version](https://github.com/shyim/adminer-for-shopware/releases/latest/) (e.g. `AdminerForShopware-1.3.0.zip`)
 * Upload and install plugin using Plugin Manager
 
 ## Install with composer
