@@ -9,6 +9,6 @@ if [ -z ${commit} ]; then
 fi
 
 # Build new release
-mkdir -p Backend/AdminerForShopware
+mkdir -p AdminerForShopware
 git archive ${commit} | tar -x -C AdminerForShopware
 zip -r AdminerForShopware-${commit}.zip AdminerForShopware
