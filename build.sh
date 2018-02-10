@@ -10,5 +10,5 @@ fi
 
 # Build new release
 mkdir -p Backend/AdminerForShopware
-git archive ${commit} | tar -x -C Backend/AdminerForShopware
-zip -r AdminerForShopware-${commit}.zip Backend/AdminerForShopware
+git archive ${commit} | tar -x -C AdminerForShopware
+zip -r AdminerForShopware-${commit}.zip AdminerForShopware

@@ -1,6 +1,19 @@
 <?php
 
+/**
+ * Class Shopware_Controllers_Backend_Adminer
+ */
 class Shopware_Controllers_Backend_Adminer extends Shopware_Controllers_Backend_ExtJs {
+
+    public function preDispatch()
+    {
+        parent::preDispatch();
+        $this->View()->addTemplateDir($this->container->getParameter('adminer.views_dir'));
+    }
+
+    /**
+     * @throws Exception
+     */
     public function formAction()
     {
         /**
