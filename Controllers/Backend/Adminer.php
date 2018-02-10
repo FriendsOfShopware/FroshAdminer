@@ -28,7 +28,7 @@ class Shopware_Controllers_Backend_Adminer extends Shopware_Controllers_Backend_
 
         $this->Front()->Plugins()->ViewRenderer()->setNoRender();
         $this->View()->dbData = Shopware()->Container()->getParameter('shopware.db');
-        $this->View()->postUri = $baseUrl . $pathToPluginFolder . '/Adminer.php';
+        $this->View()->postUri = $baseUrl . $pathToPluginFolder . '/Adminer/index.php';
 
         echo $this->View()->fetch('backend/adminer/form.tpl');
         die();
