@@ -8,7 +8,8 @@ function adminer_object() {
     }
 
     return new AdminerPlugin([
-        new AdminerFrames(true)
+        new AdminerFrames(true),
+        new AdminerTablesFilter()
     ]);
 }
 
