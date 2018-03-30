@@ -1,11 +1,11 @@
 {
-  "name": "shyim/adminer-for-shopware",
+  "name": "frosh/adminer",
   "type": "shopware-plugin",
-  "keywords": ["adminer", "shopware"],
+  "keywords": ["adminer", "shopware", "frosh"],
   "description": "Adminer for Shopware",
   "license": "MIT",
   "extra": {
-    "installer-name": "AdminerForShopware"
+    "installer-name": "FroshAdminer"
   },
   "require": {
     "php": ">=5.5.9",

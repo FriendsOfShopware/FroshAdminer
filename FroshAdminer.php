@@ -1,14 +1,14 @@
 <?php
 
-namespace AdminerForShopware;
+namespace FroshAdminer;
 
 use Shopware\Components\Plugin;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 
 /**
- * Class AdminerForShopware
+ * Class FroshAdminer
  */
-class AdminerForShopware extends Plugin
+class FroshAdminer extends Plugin
 {
     public function build(ContainerBuilder $container)
     {

@@ -1,12 +1,12 @@
 <?php
 
-namespace AdminerForShopware\Subscriber;
+namespace FroshAdminer\Subscriber;
 
 use Enlight\Event\SubscriberInterface;
 
 /**
  * Class MenuSubscriber
- * @package AdminerForShopware\Subscriber
+ * @package FroshAdminer\Subscriber
  */
 class MenuSubscriber implements SubscriberInterface
 {

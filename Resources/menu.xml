@@ -8,7 +8,7 @@
             <label lang="de">Adminer (MySQL)</label>
             <controller>Adminer</controller>
             <action>index</action>
-            <class>sprite-gear</class>
+            <class>sprite-database-sql</class>
             <parent identifiedBy="controller">ConfigurationMenu</parent>
         </entry>
         <entry>
@@ -17,7 +17,7 @@
             <label lang="de">Adminer (ElasticSearch)</label>
             <controller>Adminer</controller>
             <action>elasticSearch</action>
-            <class>sprite-gear</class>
+            <class>sprite-database</class>
             <parent identifiedBy="controller">ConfigurationMenu</parent>
         </entry>
     </entries>
