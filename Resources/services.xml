@@ -5,7 +5,7 @@
            xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <services>
-        <service id="adminer.menu_subscriber" class="AdminerForShopware\Subscriber\MenuSubscriber">
+        <service id="adminer.menu_subscriber" class="FroshAdminer\Subscriber\MenuSubscriber">
             <argument>%shopware.es.enabled%</argument>
             <tag name="shopware.event_subscriber"/>
         </service>
