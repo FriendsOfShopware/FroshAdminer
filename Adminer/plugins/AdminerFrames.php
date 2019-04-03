@@ -8,7 +8,7 @@
  */
 class AdminerFrames {
     /** @access protected */
-    private $sameOrigin;
+    var $sameOrigin;
 
     /**
      * @param bool allow running from the same origin only
