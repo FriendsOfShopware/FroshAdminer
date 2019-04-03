@@ -22,7 +22,11 @@ class Shopware_Controllers_Backend_Adminer extends Shopware_Controllers_Backend_
         $baseUrl = Shopware()->Front()->Router()->assemble(['controller' => 'index']);
         $baseUrl = str_replace('/backend', '', $baseUrl);
 
-        $shopwarePath = Shopware()->Container()->getParameter('kernel.root_dir');
+        if (mb_substr($baseUrl, -1) !== '/') {
+            $baseUrl .= '/';
+        }
+
+        $shopwarePath = Shopware()->Container()->getParameter('shopware.app.rootdir');
         $filePath = dirname(dirname(__DIR__));
         $pathToPluginFolder = str_ireplace($shopwarePath, '', $filePath);
 
