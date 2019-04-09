@@ -1,7 +1,7 @@
 language: php
 
 php:
-- 7.1
+- 7.2
 
 sudo: false
 
@@ -12,44 +12,6 @@ env:
 
 script:
 - "./build.sh"
-
-
-stages:
-  - test
-  - name: Store-Check
-    if: tag IS blank AND env(PLUGIN_ID) IS present AND type != pull_request
-  - name: Store-Sync
-    if: branch = master AND env(PLUGIN_ID) IS present AND type != pull_request
-  - name: Store-Deploy
-    if: tag IS present
-
-jobs:
-  include:
-    - stage: Store-Check
-      php: 7.3
-      before_script: skip
-      install:
-        - chmod +x ./build.sh
-        - ./build.sh ${TRAVIS_BRANCH}
-        - wget 'https://github.com/FriendsOfShopware/FroshPluginUploader/blob/master/frosh-plugin-upload.phar?raw=true' -O frosh-plugin-upload.phar
-      script:
-        - php frosh-plugin-upload.phar plugin:validate ${TRAVIS_BUILD_DIR}/${PLUGIN_NAME}*.zip
-    - stage: Store-Sync
-      before_script: skip
-      php: 7.3
-      install:
-        - wget 'https://github.com/FriendsOfShopware/FroshPluginUploader/blob/master/frosh-plugin-upload.phar?raw=true' -O frosh-plugin-upload.phar
-      script:
-        - php frosh-plugin-upload.phar plugin:update ${TRAVIS_BUILD_DIR}/Resources/store
-    - stage: Store-Deploy
-      before_script: skip
-      php: 7.3
-      install:
-        - wget 'https://github.com/FriendsOfShopware/FroshPluginUploader/blob/master/frosh-plugin-upload.phar?raw=true' -O frosh-plugin-upload.phar
-      script:
-        - chmod +x ./build.sh
-        - ./build.sh
-        - php frosh-plugin-upload.phar plugin:upload ${TRAVIS_BUILD_DIR}/${PLUGIN_NAME}*.zip
 
 deploy:
   provider: releases
