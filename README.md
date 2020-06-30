@@ -8,12 +8,8 @@ Manage the database in backend
 * [FroshPlatformAdminer](https://github.com/FriendsOfShopware/FroshPlatformAdminer) = Shopware Platform
 
 
-## MySQL
-![Adminer in Shopware](https://ipfs.io/ipfs/QmdUVhnuzidwqQgyAi7bd4hJAM26GEw7afR7Abx2ep1Kj9)
+![Adminer in Shopware](https://i.imgur.com/QFytkSv.png)
 
-
-## ElasticSearch
-![Adminer in Shopware](https://ipfs.io/ipfs/QmUpjMBEHM7To2h9WUtE2dFHMDxNA778VS3FM2pEtYWGJ4)
 
 # Installation
 
