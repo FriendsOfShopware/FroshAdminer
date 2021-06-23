@@ -26,7 +26,7 @@ class Shopware_Controllers_Backend_Adminer extends Shopware_Controllers_Backend_
             $baseUrl .= '/';
         }
 
-        $shopwarePath = Shopware()->Container()->getParameter('shopware.app.rootdir');
+        $shopwarePath = Shopware()->Container()->getParameter('shopware.app.rootDir');
         $filePath = dirname(dirname(__DIR__));
         $pathToPluginFolder = str_ireplace($shopwarePath, '', $filePath);
 
